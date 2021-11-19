@@ -16,7 +16,8 @@ function start(kw) {
     var a= textContains(kw).findOne();
     _tap(a);
     text("立即购买").waitFor();
-    click(100,2200)
+    var b=text("立即购买").findOne();
+    _tap(b)
     sleep(3000)
     if (textContains("提交订单").exists()) {
         var c=textContains("提交订单").findOne();
